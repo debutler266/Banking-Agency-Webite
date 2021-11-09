@@ -367,6 +367,129 @@ nav ul li a:hover {
 
 
 
+
+
+
+
+
+
+
+#posts {
+  background: #beb794;
+  padding: 20px 0 80px 0;
+}
+
+.post-container {
+  margin: 0 auto;
+  max-width: 90vw;
+}
+
+.post-item {
+  background-color: #e0e2db;
+  color: #111;
+  margin: 20px 0;
+}
+
+#posts img {
+  width: 100%;
+  display: block;
+}
+
+.img-container {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8));
+}
+
+.img-container .fa {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: #e6af2e;
+  transition: opacity 4.2s;
+  opacity: 0;
+}
+
+.img-container:hover img {
+  opacity: 0.4;
+}
+
+.img-container:hover .fa {
+  opacity: 1;
+}
+
+.text-container {
+  padding: 10px 5px 30px 5px;
+}
+
+.text-container p {
+  margin: 15px 0 25px 0;
+}
+
+.text-container a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px;
+  border: 2px solid #e6af2e;
+  color: #e6af2e;
+  margin-bottom: 20px;
+}
+
+.text-container a:hover {
+  background-color: #111;
+  border-color: #111;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+  background-color: #222;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footer-text {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #e0e2db;
+  margin-bottom: 10px;
+}
+
+.footer-icons {
+  font-size: 30px;
+}
+
+.footer-icons .fa {
+  margin-right: 10px;
+  color: #e0e2db;
+  transition: transform 2.2s;
+}
+
+
+.footer-icons .fa:hover {
+  color: #e6af2e;
+  transform: translateY(-15px); /* makes social icons float upwards */
+}
+
+
+
+
+
+
+
+
+
 /* responsivness for DESKTOP */
 
 @media screen and (min-width:576px) {
@@ -405,7 +528,18 @@ nav ul li a:hover {
   }
 
 
+
+
+  .post-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+  }
+
+
 }
+
 
 
 
@@ -449,6 +583,14 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 1em;
+  }
+
+
+  .post-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
   }
 
 }
